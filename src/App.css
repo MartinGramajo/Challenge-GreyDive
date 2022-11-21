@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: GothamMedium, Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.color-fondo {
+  background-color: #2c2946;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+hr {
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+}
+
+/*Switch darkmode*/
+.Container-dark {
+  background-color: #050505;
+  color: aliceblue;
+}
+
+.Container-light {
+  background-color: #2c2946;
+  color: aliceblue;
+}
+
+.claro-oscuro{
+  width: 20px;
+
+}
+
+/*Response texto*/
+@media (max-width: 800px) {
+  h1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  hr {
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 400;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*Logo Nav*/
+.logo-texto {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 800px) {
+  .logo-texto {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*Video*/
+.video {
+  width: 75%;
+  height: 600px;
+}
+
+@media (max-width: 800px) {
+  .video {
+    width: 75%;
+    height: 300px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 600px) {
+  .video {
+    width: 100%;
   }
+}
+
+/*Css Transcription*/
+.scroll {
+  width: 50%;
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+@media (max-width: 800px) {
+  .scroll {
+    width: 100%;
+  }
+}
+
+.scroll-response {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .scroll-response {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*CSS Tareas*/
+.caja {
+  width: 75%;
+}
+
+@media (max-width: 800px) {
+  .caja {
+    width: 100%;
+  }
+}
+
+.color-texto-duracion {
+  color: #f6905c;
+}
+
+/*Footer*/
+.footer-color-fondo {
+  background-color: #221e45c2;
 }
